@@ -1,0 +1,25 @@
+.btn {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+.danger {background-color: #f44336;} /* Red */ 
+.danger:hover {background: #da190b;}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4CAF50;
+}
+
+h2{
+  
+    text-transform: uppercase;
+    color:black;
+}
