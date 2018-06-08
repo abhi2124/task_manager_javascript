@@ -12,17 +12,22 @@
     <div align="center">
         <tr>
             <td>Title</td>
-            <td><input id="taskname" type="text"></td>
+            <td><input id="taskName" type="text"></td>
         </tr>
       <br><br>
-        Due Date <input id="taskdate" type="date">
+        Due Date <input id="taskDate" type="date">
         <button class="btn success" onclick = "handler.add()">ADD</button>
     </div>
     <ul></ul>
     <div align="center">
+	 <select id="filterOption" onchange="handler.filterTasks()">
+        <option>ALL</option>
+        <option>IN-PROGRESS</option>
+        <option>COMPLETED</option>
+        </select>
         <table id="tasksview"></table>
         <button class="btn danger" onclick = "handler.delete()">DELETE</button>
-        <button class="btn info" onclick = "handler.changeStatus()">TASK COMPLETED </button>
+       
     </div>
     <script src="js/script.js"></script>
 </body>
