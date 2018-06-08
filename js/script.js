@@ -150,6 +150,12 @@ var view = {
 
     },
     
+    createCheckBox : function (){
+        var checkBoxElement = document.createElement("input");
+        checkBoxElement.type="checkbox";
+        return checkBoxElement;
+        },
+        
     completeStatus : function(status){
         var message = "";
         if(status == false){
@@ -160,7 +166,8 @@ var view = {
         }
         return message ;
     },
-    
+ 
+   
     createTableHeader : function (viewElement){
         var tableHeader = document.createElement("tr");
         var checkbox = view.createCheckBox();
@@ -180,11 +187,5 @@ var view = {
         tableHeader.appendChild(statusElement);        
         viewElement.appendChild(tableHeader);
         return viewElement;
-    },
-    
-    createCheckBox : function (){
-    var checkBoxElement = document.createElement("input");
-    checkBoxElement.type="checkbox";
-    return checkBoxElement;
     }
 }
